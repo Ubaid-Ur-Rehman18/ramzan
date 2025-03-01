@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramzan Mubarak 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Amiri', serif;
+            background: linear-gradient(to bottom, #0f172a, #1e293b, #334155);
+            color: white;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .masjid-bg {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 50%;
+            background: url('https://i.imgur.com/JlY5rWy.png') no-repeat center bottom;
+            background-size: cover;
+            opacity: 0.5;
+        }
+        
+        @keyframes glow {
+            0% { text-shadow: 0 0 5px #fff; }
+            50% { text-shadow: 0 0 20px #ffd700; }
+            100% { text-shadow: 0 0 5px #fff; }
+        }
+        .glow-text {
+            animation: glow 2s infinite alternate;
+        }
+        
+        @keyframes flicker {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { opacity: 1; }
+        }
+        .flicker {
+            animation: flicker 1.5s infinite;
+        }
+        
+        .floating {
+            animation: float 3s infinite ease-in-out;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+ 
+    <h1 class="text-5xl font-bold text-yellow-400 glow-text">Ramzan Mubarak 2025</h1>
+    
+    <!-- Ramzan Dua -->
+    <div class="mt-6 p-4 bg-gray-900 bg-opacity-50 rounded-lg shadow-lg w-3/4">
+        <p class="text-xl text-yellow-300 glow-text">اللهم اجعلنا من عتقاء شهر رمضان واغفر لنا ذنوبنا وتقبل صيامنا وقيامنا</p>
+        <p class="text-sm text-gray-300 mt-2 italic">"O Allah, make us among those who are freed from the Hellfire in this blessed month of Ramadan, forgive our sins, and accept our fasting and prayers."</p>
+        
+        <!-- English Dua below Arabic Dua -->
+        <p class="mt-4 text-lg text-gray-300">May this holy month bring peace and prosperity!</p>
+    </div>
+    
+    <div class="masjid-bg"></div>
+    
+    <footer class="absolute bottom-5 text-gray-400 text-sm">
+        &copy; 2025 All Rights Reserved | Ubaid-ur-Rehman
+    </footer>
+    
+</body>
+</html>
